@@ -1,47 +1,55 @@
-sign 
-body{
+#hp {
     font-family: 'Yanone Kaffeesatz', sans-serif;
-    color: rgb(75, 9, 182);
+    color: rgb(100, 12, 233);
+    float: right;
+    object-fit: center;
+
     margin: 0px;
-    background: url(leftframe.jpg) no-repeat;
+    background: url(frame.jpg) no-repeat  ;
+    
+   
 }
 .sign-in-button button {
     position:absolute;
-    top: 20px;
-    left:540px;
+    top: -10px;
+    left: 100px;
     margin:70px;
     width:170px;
-    background-color: #FF1684; 
-    border: 1px solid #FF1684; 
-    color: #FFFFFF; 
-    padding: 10px 24px; /* Some padding */
-    cursor: pointer; /* Pointer/hand icon */
-    
-
-}
-.sign-up-button button {
-    position:absolute;
-    top: 20px;
-    left:830px;
-    width:170px;
-    margin:70px;
     background-color: #FFFFFF; 
     border: 1px solid #FF1684; 
     color: #FF1684; 
     padding: 10px 24px; /* Some padding */
     cursor: pointer; /* Pointer/hand icon */
     
+
+}
+.sign-up-button button {
+    position: absolute;
+    top: -10px;
+    left: 300px;
+    width:170px;
+    margin:70px;
+    
+    background-color: #FF1684; 
+    border: 1px solid #FF1684; 
+    color: #FFFFFF; 
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    transition-duration: 0.4s;
+    
 }  
   /* Add a background color on hover */
-.sign-up-button button:hover {
+.sign-up-button button:hover 
+{
+    
     background-color: #FF1684;
     color:#FFFFFF;
 }
 .signupFrm {
-    padding-top:0px;
-    left:600px;
+    padding-top:80px;
+    left:400px;
     top:-450px;
-    position: relative;
+    position: center;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -50,7 +58,7 @@ body{
     background-color: white;
     width: 400px;
     border-radius: 8px;
-    padding: 20px 40px;
+    padding: 20px 120px;
     box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
 }
 .submitBtn {
@@ -60,7 +68,7 @@ body{
     border: 2px solid rgb(102, 9, 207);
     background-color:rgb(109, 12, 201);
     color: white;
-    border-radius: 4px;
+    border-radius: 4px; 
     cursor: pointer;
     font-size: 16px;
     font-family: 'Popins', Courier;
@@ -73,7 +81,7 @@ body{
 }
 .inputContainer {
     position: relative;
-    height: 45px;
+    height: 35px;
     width: 90%;
     margin-bottom: 17px;
 }
