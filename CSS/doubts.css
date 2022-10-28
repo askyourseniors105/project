@@ -784,3 +784,33 @@ a{
     right: 28px;
     padding: auto;
 }
+
+@media screen and (max-width:1000px){
+    .student-name-and-arrow-container p {
+        
+        /* width: 131px; */
+        width: 140px;
+        height: 42px;
+        font-family: 'Poppins', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        color: #2D0660;
+    }
+    }
+    
+}
+@media screen and (max-width: 500px)
+.student-name-and-arrow-container p {
+    /* width: 131px; */
+    width: 140px;
+    height: 42px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #2D0660;
+}
+
