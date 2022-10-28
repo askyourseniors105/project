@@ -813,4 +813,26 @@ a{
     line-height: 27px;
     color: #2D0660;
 }
+@media screen and (max-width : 800px) {
+    .info-container {
+        /* background-color: gold; */
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        /* gap: 596px; */
+        /* gap: 500px; */
+        /* gap: 300px; */
+        gap: 23%;
+        /* position: absolute; */
+        /* width: 1000px; */
+        /* width: 800px; */
+        width: 95%;
+        height: 64px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 
