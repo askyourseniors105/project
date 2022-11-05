@@ -10,39 +10,41 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Ask your seniors</title>
 </head>
-<bdoy>
-    <div>
-        <img src="ASSETS\Sign-in-page\leftframe.jpg" alt="" height="auto">
-    </div>
-    <div class="sign-in-button">
-        <button>SIGN IN</button>
-    </div>
-    <div class="sign-up-button">
-        <a href="signup.html"><button>SIGN UP</button></a>
-    </div>
-
-    <div class="signupFrm">
-        <form action="" class="form">
-            <center><h1>Welcome Back!</h1></center>
-            <label for="">Email</label>
-            <div class="inputContainer">
-              
-              <input type="text" class="input" placeholder="Enter Email">
-              <label for="" class="label"><i class="fa fa-envelope" aria-hidden="true">&nbspEnter Email</i></label>
-              
+<body>
+    <section>
+        <div class="imgSide">
+            <img src="leftframe.jpg" alt="border">
+        </div>
+        <div class="content">
+            <div class="right">
+                <div class="buttons">
+                    <a href="sign-in.html"><button class="sign-in">SIGN IN</button></a>
+                    <a href="signup.html"><button class="sign-up">SIGN UP</button></a>
+                </div>
+                <form>
+                    <center><h2>Welcome Back!</h2></center>
+                    <div class="input-field">
+                        <span>Email</span>
+                        <input type="text" class="fontAwesome" name="emailAddress" placeholder="&#xf0e0;  Enter your Email">
+                        
+                    </div>
+                    <div class="input-field">
+                        <span>Password</span>
+                        <input type="password" class="fontAwesome" name="password" placeholder="&#xf023;  Enter your Password">
+                    </div>
+                    <div class="btn">
+                        <button type="submit">SIGN IN</button>
+                    </div>
+ 
+                </form>
+                <div class="input-field">
+                    <br><br>
+                    <center><p>-Or Sign Up With-</p></center>
+                    <center><i class="fa-brands fa-google"></i></center>
+                </div>
             </div>
-            <label for="">Password</label>
-            <div class="inputContainer">
-              
-              <input type="text" class="input" placeholder="a">
-              <label for="" class="label"><i class="fas fa-lock" aria-hidden="true">&nbspEnter Password</i></label>
-            </div>
-      
-            <input type="submit" class="submitBtn" value="Sign In">
-            <center><h3 class="sign-in-text">- Or sign in with -</h3></center>
-            <center><i class="fa-brands fa-google"></i></center>
-        </form>
-        
-    </div>
+        </div>
+    </section>
 
-</bdoy>
+</body>
+</html>
