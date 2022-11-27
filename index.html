@@ -176,19 +176,11 @@
   
 }
 
-
-    
-  
 </style>
 <body>
     <header class="header">
         <div class="left">
             <img src="Frame 21.png" alt="">
-          
-       
-
-
-        
             <ul class="navbar">
                 <li><a href="#">Home</a></li>
                 <li><a href="doubts.html">Ask your doubts</a></li>
@@ -197,9 +189,6 @@
                 <li><a href="quiz.html">Quiz</a></li>
                
             </ul>
-       
-
-    
             <a href="signup.html"><button class="btn">Sign up</button></a> 
             <a href ="sign-in.html"><button class="btn">Sign in</button></a>
        
@@ -223,5 +212,60 @@
     </div>
          -->
     
+    <script type="module">
+            // Import the functions you need from the SDKs you need
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
+            import { getAuth, signInWithPopup, GoogleAuthProvider} from "https://www.gstatic.com/firebasejs/9.14.0/firebase-auth.js";
+          
+          
+            // TODO: Add SDKs for Firebase products that you want to use
+            // https://firebase.google.com/docs/web/setup#available-libraries
+          
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            const firebaseConfig = {
+                apiKey: "AIzaSyAsjNhr1U7Rs3_v4Us8KQ4AsB7v037NsGQ",
+                authDomain: "ask-your-seniors.firebaseapp.com",
+                projectId: "ask-your-seniors",
+                storageBucket: "ask-your-seniors.appspot.com",
+                messagingSenderId: "290940374754",
+                appId: "1:290940374754:web:60ca065bc78593df8d98bb",
+               
+            };
+          
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+            const auth = getAuth(app);
+            const provider = new GoogleAuthProvider(app);
+            // const provider1 = new GithubAuthProvider(app);
+           
+          
+           signInWithPopup(auth, provider)
+            .then((result) => {
+              // This gives you a Google Access Token. You can use it to access the Google API.
+              const credential = GoogleAuthProvider.credentialFromResult(result);
+              const token = credential.accessToken;
+              // The signed-in user info.
+              const user = result.user;
+              
+              // user name = displayName
+              //email = email
+              //photo = photoURL
+              //redirect 
+          
+              alert(user.displayName);
+              // ...
+            }).catch((error) => {
+              // Handle Errors here.
+              const errorCode = error.code;
+              const errorMessage = error.message;
+              // The email of the user's account used.
+              const email = error.customData.email;
+              // The AuthCredential type that was used.
+              const credential = GoogleAuthProvider.credentialFromError(error);
+              // ...
+              alert(errorMessage);
+            });
+          </script> 
 </body>
 </html>
